@@ -42,3 +42,6 @@ myr_limerich[lime_ra<154] <- NA
 # set myr values with value 0 and myr-values where lime is NA (outside Norway) to NA
 myr_limerich[is.na(lime_ra)] <- NA
 myr_limerich[myr_limerich==0] <- NA
+
+terra::plot(myr_limerich)
+terra::plot(myr_limerich/1000)
