@@ -12,7 +12,7 @@ library(terra)
 #                    layer="ANO_Art")
 
 # load tiff
-myr <- terra::rast("R:/Kladd/Myr_Norge/MyrNorge.tif")
+myr <- terra::rast("R:/GeoSpatialData/Habitats_biotopes/Norway_Myrkart/Original/MyrMod2Rv.tif")
 terra::plot(myr)
 
 #### Import Norway map
