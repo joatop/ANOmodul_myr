@@ -12,7 +12,8 @@ library(terra)
 #                    layer="ANO_Art")
 
 # load tiff
-myr <- terra::rast("R:/GeoSpatialData/Habitats_biotopes/Norway_Myrkart/Original/MyrMod2Rv.tif")
+# original for Southern Norway: .../Original/MyrMod2Rv.tif
+myr <- terra::rast("R:/GeoSpatialData/Habitats_biotopes/Norway_Myrkart/Converted/Myr_Norge.tif")
 terra::plot(myr)
 
 #### Import Norway map
@@ -45,3 +46,5 @@ myr_limerich[myr_limerich==0] <- NA
 
 terra::plot(myr_limerich)
 terra::plot(myr_limerich/1000)
+
+#writeRaster(myr_limerich, "C:/Users/joachim.topper/OneDrive - NINA/work/projects/ANO-moduler/myr/limerich_myr_Norway.tif")
